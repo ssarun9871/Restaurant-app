@@ -1,0 +1,38 @@
+.listbox {
+    margin: auto;
+    height: 30rem;
+    width: 90%;
+    max-width: 60rem;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.listbox ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+.listbox hr {
+    margin: 1rem 0;
+    color: rgb(230, 224, 224);
+}
+
+.name {
+    font-weight: bold;
+    margin:0.2rem;
+    
+}
+
+.description {
+ margin: 0.2rem;
+ font-style: italic;
+}
+
+.price {
+    font-weight: bold;
+    color: brown;
+    margin: 0.2rem;
+}
