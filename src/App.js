@@ -1,13 +1,16 @@
-import React from 'react';
-import Header from './Components/Layout/Header';
-import './App.css';
+import React, { Fragment } from "react";
+import Header from "./Components/Layout/Header";
+import Meal from "./Components/Meals/Meal";
+import "./App.css";
 
 const App = () => {
-
   return (
-    <div>
-    <Header /> 
-    </div>
+    <Fragment>
+      <Header />
+      <main>
+        <Meal />
+      </main>
+    </Fragment>
   );
 };
 
