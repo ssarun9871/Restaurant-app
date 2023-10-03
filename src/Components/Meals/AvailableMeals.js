@@ -1,5 +1,6 @@
 import React from "react";
 import "./AvailableMeals.css";
+import MealItem from "./MealItem/MealItem";
 
 const DUMMY_MEALS = [
   {
@@ -32,14 +33,9 @@ const MealList = () => {
   return (
     <section className="listbox">
       <ul>
-        {DUMMY_MEALS.map((meal) => 
-           (<li className="list" key={meal.id} id={meal.id}>
-            <p className="name">{meal.name}</p>
-            <p className="description">{meal.description}</p>
-            <p className="price">{`$${meal.price}`}</p>
-            <hr/>
-          </li>)
-        )}
+        {DUMMY_MEALS.map((meal) => (
+          <MealItem meal={meal} />
+        ))}
       </ul>
     </section>
   );
